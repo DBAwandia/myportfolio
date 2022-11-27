@@ -1,0 +1,77 @@
+.about{
+    width: 100%;
+    height: 100vh;
+}
+.about_container{
+    width: 100%;
+    padding: 0px 14rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 5rem;
+}
+.gif_img{
+    width: 90%;
+    height: 70%;
+}
+.gif_img > img{
+    width: 95%;
+    height: 85%;
+    object-fit: cover;
+}
+.about_description{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+.about_header{
+    display: flex;
+    width: 40%;
+    align-items: center;
+    gap: 0.5rem;
+}
+.about_header > h1{
+    font-size: 5rem;
+}
+.about_header > span{
+    font-size: 4.5rem;
+    color: orangered;
+    font-weight: bold;
+}
+.my_statement{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+.my_statement > h2{
+    font-size: 3.1rem;
+}
+.my_statement > p{
+    width: 100%;
+    font-size: 2rem;
+    color: gray;
+    line-height: 55px;
+}
+.social{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    cursor: pointer;
+}
+.twitter{
+    font-size: 4rem !important;
+    color: #1DA1F2;
+}
+.github{
+    font-size: 4rem !important;
+    color: #171515;
+}
+.twitter:hover{
+    color: orange !important;
+}
+.github:hover{
+    color: orangered !important;
+}

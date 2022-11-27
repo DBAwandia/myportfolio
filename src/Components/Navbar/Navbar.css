@@ -1,0 +1,59 @@
+.navbar{
+    width: 100%;
+    height: 10%;
+    display: grid;
+    place-items: center;
+    align-items: center;
+}
+.nav_container{
+    width: 100%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    padding: 0px 14rem;
+    justify-content: space-between;
+}
+.logo{
+    font-size: 2.2rem;
+    font-weight: 700;
+    letter-spacing: 3px;
+}
+.items{
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+}
+.normal_link{
+    font-size: 1.9rem;
+    font-weight: 500;
+}
+.active_Link{
+    font-size: 1.9rem;
+    font-weight: 500;
+    box-shadow: -1px 33px 52px -7px rgba(232,224,28,0.89);
+    -webkit-box-shadow: -1px 33px 52px -7px rgba(232,224,28,0.85);
+    -moz-box-shadow: -1px 33px 52px -7px rgba(232,224,28,0.83);
+    color: blue;
+    background: transparent;
+    border: 0;
+}
+.items > p:hover{
+    color: orange;
+}
+ 
+.contact_me_button{
+    padding: 1rem 1.8rem;
+    font-size: 1.8rem;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    color: white;
+    border-radius: 40px;
+    background-color: orangered;
+    box-shadow: -1px 33px 52px -7px rgba(232,224,28,0.59);
+-webkit-box-shadow: -1px 33px 52px -7px rgba(232,224,28,0.59);
+-moz-box-shadow: -1px 33px 52px -7px rgba(232,224,28,0.59);
+}
+.contact_me_button:hover{
+    background-color: orange;
+}

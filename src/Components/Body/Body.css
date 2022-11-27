@@ -1,0 +1,118 @@
+.body{
+    /* background-color: red; */
+    height: 100vh;
+    width: 100%;
+    margin-top: 2rem;
+}
+.body_container{
+    flex: 1;
+    display: grid;
+    align-items: center;
+    place-items: center;
+    padding: 3rem 14rem;
+}
+.left_body_container{
+    flex: 0.5;
+}
+.right_body_container{
+    flex: 0.5;
+}
+.body_container{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.left_items{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.left_items > h1{
+    font-size: 4rem;
+}
+.left_items > h2{
+    font-size: 3.5rem;
+    color: orange;
+}
+.left_items > p{
+    width: 85%;
+    line-height: 45px;
+    font-size: 1.6rem;
+}
+.hire_me_button{
+    width: 30%;
+    height: 4.5rem;
+    font-size: 2rem;
+    border: 0;
+    outline: 0;
+    background-color: orangered;
+    color: white;
+    border-radius: 40px;
+    cursor: pointer;
+    box-shadow: -1px 33px 52px -7px rgba(232,224,28,0.59);
+-webkit-box-shadow: -1px 33px 52px -7px rgba(232,224,28,0.59);
+-moz-box-shadow: -1px 33px 52px -7px rgba(232,224,28,0.59);
+}
+.hire_me_button:hover{
+    background-color: orange;
+}
+.right_body_container{
+    flex: 0.5;
+    overflow: hidden;
+
+    /* position: relative; */
+}
+.right_items{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    position: relative;
+}
+.image_blob2{
+    position: absolute;
+    right: 0.3rem;
+    top: 0.5rem;
+}
+.image_blob2:hover{
+    position: absolute;
+    right: 0.3rem;
+    transform: rotate(23deg);
+    top: 0.5rem;
+}
+.image_blob2 > img{
+    border-radius: 90%;
+    object-fit: cover;
+    width: 10rem;
+    height: 10rem;
+   
+}
+
+.image_blob3{
+    top: 0rem;
+  
+}
+.image_blob3 > img{
+    width: 50rem;
+    border-radius: 50%;
+    object-fit: contain;
+    height: 55rem;
+}
+.icons_profile{
+    position: sticky;
+    right: 0rem;
+    display: flex;
+    cursor: pointer;
+    flex-direction: column;
+    gap: 5rem;
+}
+.twitter{
+    font-size: 4rem !important;
+    margin-left: 8rem !important;
+    color: #1DA1F2;
+}
+.github{
+    font-size: 4rem !important;
+    margin-left: 8rem !important;
+    color: #171515;
+}
