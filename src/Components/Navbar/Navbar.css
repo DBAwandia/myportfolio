@@ -34,9 +34,9 @@ a .normal_link{
 a .active_Link{
     font-size: 1.9rem;
     font-weight: 500;
-    box-shadow: -1px 33px 52px -7px rgba(232,224,28,0.89);
-    -webkit-box-shadow: -1px 33px 52px -7px rgba(232,224,28,0.85);
-    -moz-box-shadow: -1px 33px 52px -7px rgba(232,224,28,0.83);
+    box-shadow: -1px 33px 52px -7px rgba(232,224,28,0.3);
+    -webkit-box-shadow: -1px 33px 52px -7px rgba(232,224,28,0.25);
+    -moz-box-shadow: -1px 33px 52px -7px rgba(232,224,28,0.23);
     color: blue;
     background: transparent;
     border: 0;
@@ -52,12 +52,13 @@ a .active_Link{
     cursor: pointer;
     outline: none;
     color: white;
-    border-radius: 40px;
     background-color: orangered;
-    box-shadow: -1px 33px 52px -7px rgba(232,224,28,0.59);
--webkit-box-shadow: -1px 33px 52px -7px rgba(232,224,28,0.59);
--moz-box-shadow: -1px 33px 52px -7px rgba(232,224,28,0.59);
+    box-shadow: -1px 33px 52px -7px rgba(232,224,28,0.29);
+-webkit-box-shadow: -1px 33px 52px -7px rgba(232,224,28,0.29);
+-moz-box-shadow: -1px 33px 52px -7px rgba(232,224,28,0.29);
 }
 .contact_me_button:hover{
-    background-color: orange;
+    background-color: transparent;
+    color: orange;
+    border: 1px solid orange;
 }

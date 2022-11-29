@@ -44,17 +44,16 @@ a{
 }
 .hire_me_button{
     width: 30%;
-    height: 4.5rem;
+    height: 5rem;
     font-size: 2rem;
     border: 0;
     outline: 0;
     background-color: orangered;
     color: white;
-    border-radius: 40px;
     cursor: pointer;
-    box-shadow: -1px 33px 52px -7px rgba(232,224,28,0.59);
--webkit-box-shadow: -1px 33px 52px -7px rgba(232,224,28,0.59);
--moz-box-shadow: -1px 33px 52px -7px rgba(232,224,28,0.59);
+    box-shadow: -1px 33px 52px -7px rgba(232,224,28,0.19);
+-webkit-box-shadow: -1px 33px 52px -7px rgba(232,224,28,0.19);
+-moz-box-shadow: -1px 33px 52px -7px rgba(232,224,28,0.19);
 }
 .hire_me_button:hover{
     background-color: orange;
@@ -117,5 +116,5 @@ a{
 .github{
     font-size: 4rem !important;
     margin-left: 8rem !important;
-    color: #171515;
+    color: whitesmoke;
 }

@@ -12,6 +12,7 @@ function Navbar() {
           Home
         </div>
         <div className='items'>
+        
           <Link to="#skills" smooth>
             <p className={active === "Skills"? "active_Link": "normal_link"}
               onClick={()=>{
@@ -25,6 +26,13 @@ function Navbar() {
                 setActive("Projects")
               }}
             >Projects</p>
+          </Link>
+          <Link to="#personal" smooth>
+            <p className={active === "personal"? "active_Link": "normal_link"}
+              onClick={()=>{
+                setActive("personal")
+              }}
+            >Background</p>
           </Link>
           <Link to="#mysocials" smooth>
             <p className={active ==="About"? "active_Link": "normal_link"}
