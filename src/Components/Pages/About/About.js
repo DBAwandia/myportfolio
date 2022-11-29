@@ -25,8 +25,12 @@ function About() {
             I love coding and specially web development.
             </p>
             <div className='social'>
-             <Twitter className="twitter" />
-             <GitHub className="github" />
+            <a href='https://twitter.com/keniko1297'>
+              <Twitter className="twitter" />
+             </a>
+             <a href='https://github.com/DBAwandia'>
+              <GitHub className="github" />
+             </a>
             </div>
           </div>
         </div>

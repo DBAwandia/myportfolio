@@ -18,16 +18,20 @@
     font-weight: 700;
     letter-spacing: 3px;
 }
+a{
+    text-decoration: none;
+}
 .items{
     display: flex;
     align-items: center;
     gap: 4rem;
 }
-.normal_link{
+a .normal_link{
     font-size: 1.9rem;
     font-weight: 500;
+    color: gray;
 }
-.active_Link{
+a .active_Link{
     font-size: 1.9rem;
     font-weight: 500;
     box-shadow: -1px 33px 52px -7px rgba(232,224,28,0.89);
@@ -37,7 +41,7 @@
     background: transparent;
     border: 0;
 }
-.items > p:hover{
+.items >a > p:hover{
     color: orange;
 }
  

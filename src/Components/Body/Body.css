@@ -39,6 +39,9 @@
     line-height: 45px;
     font-size: 1.6rem;
 }
+a{
+    text-decoration: none;
+}
 .hire_me_button{
     width: 30%;
     height: 4.5rem;

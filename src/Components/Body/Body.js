@@ -1,9 +1,11 @@
 import React from 'react'
 import "./Body.css"
 import { Twitter,GitHub } from "@mui/icons-material"
+import { HashLink as Link } from 'react-router-hash-link';
+
 function Body() {
   return (
-    <div className='body'>
+    <div className='body' >
         <div className='body_container'>
             <div className='left_body_container'>
                 <div className='left_items'>
@@ -20,7 +22,9 @@ function Body() {
                              sometimes on purpose 
                              (injected humour and the like).
                     </p>
-                    <button className='hire_me_button'>Hire me</button>
+                    <Link to="#mysocials">
+                        <button  className='hire_me_button'>Hire me</button>
+                    </Link>
                 </div>
             </div>
             <div className='right_body_container'>

@@ -1,0 +1,96 @@
+.contact{
+    width: 100%;
+    height: 100vh;
+    padding: 0px 14rem;
+    display: grid;
+    overflow: hidden;
+    place-items: center;
+    align-items: center;
+    position: relative;
+}
+.top{
+    position: absolute;
+    right: 2rem;
+    bottom: 4rem;
+    cursor: pointer;
+}
+.expand{
+    font-size: 4.5rem !important;
+    color: gray;
+}
+.my_socials{
+    position: absolute;
+    left: 0rem;
+    bottom: 18rem;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    gap: 1.5rem;
+    width: 20%;
+    transform: rotate(270.8deg);
+}
+.my_socials > p{
+    font-size: 2.3rem;
+}
+.my_socials > span{
+    font-size: 2.3rem;
+    color: orangered;
+}
+.contact_image > img{
+    width: 100%;
+    height: 90%;
+    object-fit: cover;
+}
+.contact_icons{
+    width: 90%;
+    display: flex;
+    align-items: center;
+    border: 0;
+    outline: 0;
+    border-radius: 2px;
+    justify-content: space-around;
+    cursor: pointer;
+}
+a{
+    text-decoration: none;
+}
+.socialz{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+.socialz > p{
+    color: rgba(128, 128, 128,0.7);
+    font-size: 1.7rem;
+}
+.twitterz{
+    font-size: 4rem !important;
+    color: #1DA1F2;
+}
+.twitterz:hover{
+    color: orange !important;
+}
+.telegram:hover{
+    color: orange !important;
+}
+.whatsapp:hover{
+    color: orange !important;
+}
+.email:hover{
+    color: orange !important;
+}
+.telegram{
+    font-size: 4rem !important;
+    color: #0088cc;
+}
+.whatsapp{
+    font-size: 4rem !important;
+    color: #25D366;
+}
+.email{
+    font-size: 4rem !important;
+    color: #df1f00;
+}

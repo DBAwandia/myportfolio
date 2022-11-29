@@ -24,7 +24,7 @@
     height: 100%;
     display: flex;
     flex-direction: column;
-    gap: 3rem;
+    gap: 10rem;
 }
 .about_header{
     display: flex;

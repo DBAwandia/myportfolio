@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
 import "./Navbar.css"
-// import {useNavigate} from "react-router-dom"
+import { HashLink as Link } from 'react-router-hash-link';
+
 function Navbar() {
-  // const navigate = useNavigate()
   const [active , setActive ] = useState("")
   
   return (
@@ -12,21 +12,27 @@ function Navbar() {
           Home
         </div>
         <div className='items'>
-          <p className={active ==="About"? "active_Link": "normal_link"}
-            onClick={()=>{
-              setActive("About")
-            }}
-          >AboutMe</p>
-          <p className={active === "Skills"? "active_Link": "normal_link"}
-            onClick={()=>{
-              setActive("Skills")
-            }}
-          >Skills</p>
-          <p className={active ==="Projects"? "active_Link": "normal_link"}
-            onClick={()=>{
-              setActive("Projects")
-            }}
-          >Projects</p>
+          <Link to="#skills" smooth>
+            <p className={active === "Skills"? "active_Link": "normal_link"}
+              onClick={()=>{
+                setActive("Skills")
+              }}
+            >Skills</p>
+          </Link>
+          <Link to="#projects" smooth>
+            <p className={active ==="Projects"? "active_Link": "normal_link"}
+              onClick={()=>{
+                setActive("Projects")
+              }}
+            >Projects</p>
+          </Link>
+          <Link to="#mysocials" smooth>
+            <p className={active ==="About"? "active_Link": "normal_link"}
+              onClick={()=>{
+                setActive("About")
+              }}
+            >My socials</p>
+          </Link>
           <button className='contact_me_button'>Contact me</button>
         </div>
       </div>
