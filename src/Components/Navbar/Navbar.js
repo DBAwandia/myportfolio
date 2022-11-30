@@ -32,7 +32,7 @@ function Navbar() {
               onClick={()=>{
                 setActive("personal")
               }}
-            >Background</p>
+            >About</p>
           </Link>
           <Link to="#mysocials" smooth>
             <p className={active ==="About"? "active_Link": "normal_link"}
@@ -41,7 +41,7 @@ function Navbar() {
               }}
             >My socials</p>
           </Link>
-          <button className='contact_me_button'>Contact me</button>
+          <button className='contact_me_button'>Resume</button>
         </div>
       </div>
     </div>

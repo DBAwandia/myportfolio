@@ -31,13 +31,16 @@
     font-size: 4rem;
 }
 .left_items > h2{
-    font-size: 3.5rem;
+    font-size: 5.5rem;
     color: orange;
 }
+.left_items > h3{
+    font-size: 3.5rem;
+}
 .left_items > p{
-    width: 85%;
-    line-height: 45px;
-    font-size: 1.6rem;
+    width: 88%;
+    line-height: 58px;
+    font-size: 1.8rem;
 }
 a{
     text-decoration: none;

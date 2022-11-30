@@ -2,19 +2,7 @@
     width: 100%;
     height: 100vh;
     overflow: scroll;
-   /* background: #00416A;  
-background: -webkit-linear-gradient(to right, #E4E5E6, #00416A); 
-background: linear-gradient(to right, #E4E5E6, #00416A);  */
-/* background: #0F2027;  
-background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  
-background: linear-gradient(to right, #2C5364, #203A43, #0F2027);  */
-background: #0f0c29;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #24243e, #302b63, #0f0c29); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-
-
-    
+    background-color: rgba(255, 192, 203,0.12);
     display: grid;
     place-items: center;
     align-items: center;

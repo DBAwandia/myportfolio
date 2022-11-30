@@ -11,7 +11,7 @@ function Body() {
                 <div className='left_items'>
                     <h1>Hi, I Am</h1>
                     <h2>Kennedy Wandia</h2>
-                    <h2 style={{color:"teal"}}>Full stack developer</h2>
+                    <h3 style={{color:"teal"}}>Full stack developer</h3>
                     <p> Many desktop publishing packages
                          and web page editors now use Lorem
                           Ipsum as their default model text, 

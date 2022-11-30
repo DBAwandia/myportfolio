@@ -14,7 +14,7 @@
     justify-content: space-between;
 }
 .logo{
-    font-size: 2.2rem;
+    font-size: 2.5rem;
     font-weight: 700;
     letter-spacing: 3px;
 }
@@ -27,12 +27,12 @@ a{
     gap: 4rem;
 }
 a .normal_link{
-    font-size: 1.9rem;
+    font-size: 2.23rem;
     font-weight: 500;
     color: gray;
 }
 a .active_Link{
-    font-size: 1.9rem;
+    font-size: 2.23rem;
     font-weight: 500;
     box-shadow: -1px 33px 52px -7px rgba(232,224,28,0.3);
     -webkit-box-shadow: -1px 33px 52px -7px rgba(232,224,28,0.25);
@@ -46,8 +46,8 @@ a .active_Link{
 }
  
 .contact_me_button{
-    padding: 1rem 1.8rem;
-    font-size: 1.8rem;
+    padding: 1rem 5.4rem;
+    font-size: 2.3rem;
     border: none;
     cursor: pointer;
     outline: none;

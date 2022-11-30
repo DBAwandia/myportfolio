@@ -1,9 +1,10 @@
 .projects{
     width: 100%;
     height: 100vh;
-    /* background: rgba(0, 0, 0,0.84); */
-    background-color: rgba(255, 255, 255,0.24);
+    background: rgba(0, 0, 0,0.84);
     position: relative;
+    color: darkgray;
+
 }
 .show_image{
     position: absolute;
@@ -45,7 +46,6 @@
 }
 .project_showcase{
     display: flex;
-    align-items: center;
     width: 100%;
     margin-top: 2rem ;
     gap: 1rem;
@@ -72,7 +72,6 @@
 .project_description > h1{
     font-size: 2.8rem;
     width: 100%;
-    margin-top: -18rem;
 }
 .project_description > p{
     width: 85%;
@@ -82,16 +81,16 @@
 }
 .project_description >  a > button{
     width: 85%;
-    height: 4.3rem;
+    height: 6rem;
     border: 0;
     outline: 0;
     cursor: pointer;
-    font-size: 1.8rem;
+    font-size: 2.5rem;
     background-color: orangered;
     color: white;
-    box-shadow: -1px 33px 52px -7px rgba(232,224,28,0.59);
-    -webkit-box-shadow: -1px 33px 52px -7px rgba(232,224,28,0.59);
-    -moz-box-shadow: -1px 33px 52px -7px rgba(232,224,28,0.59);
+    box-shadow: -1px 33px 52px -7px rgba(232,224,28,0.19);
+    -webkit-box-shadow: -1px 33px 52px -7px rgba(232,224,28,0.19);
+    -moz-box-shadow: -1px 33px 52px -7px rgba(232,224,28,0.19);
 }
 .project_description >a >  button:hover{
     background-color: orange;

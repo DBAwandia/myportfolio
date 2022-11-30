@@ -4,6 +4,7 @@
     padding: 0rem 14rem;
     margin-bottom: 1.5rem;
     margin-top: 5rem;
+    color: darkgray;
 
 }
 .personal_education{
@@ -49,13 +50,14 @@
     text-align: center;
     border-radius: 8px;
     cursor: crosshair;
+    color: white;
     letter-spacing: 3px;
     font-size: 2rem;
+    background-color: orange;
     border: 1px solid rgba(255, 165, 0,0.3);
     box-shadow: -1px 33px 52px -7px rgba(232,224,28,0.39);
     -webkit-box-shadow: -1px 33px 52px -7px rgba(232,224,28,0.35);
     -moz-box-shadow: -1px 33px 52px -7px rgba(232,224,28,0.33);
-    color: blue;
     margin-top: 10rem;
 }
 .education_desc > span:hover{

@@ -1,7 +1,8 @@
 import React from 'react'
-import Body from '../../Body/Body'
-import Navbar from '../../Navbar/Navbar'
 import "./Skills.css"
+import 'animate.css';
+import TrackVisibility from 'react-on-screen';
+
 function Skills() {
   const skillsData = [
     {
@@ -41,9 +42,14 @@ function Skills() {
         <div className='skills_header'>
           <h1>My </h1><span>Skills</span>
         </div>
-        <div className='skills_desc'>
+          <TrackVisibility>
+       {({isVisible}) =>  
+       <div className={isVisible? "animate__fadeInLeft":"skills_desc"}>
           <p>Tools and programming languages that I use for development and making projects</p>
         </div>
+        }
+        </TrackVisibility>
+        
         <div className='skills_languages'>
         {skillsData.map((item) =>{
           return <div className='skillz_container' key={item.id}>
