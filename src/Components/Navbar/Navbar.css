@@ -4,6 +4,68 @@
     display: grid;
     place-items: center;
     align-items: center;
+    position: relative;
+}
+.position_sidebars{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100vh;
+}
+.sidebar_close{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 99;
+    height: 100vh;
+    background-color: rgba(0, 0, 0,0.945);
+    display: none;
+
+}
+.sidebar_icons{
+    width: 28%;
+    background-color: white;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    padding: 2rem 5rem;
+    flex-direction: column;
+    gap: 3rem;
+    z-index: 9999;
+    display: none;
+}
+.icon_skillz{
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+}
+.icon_skillzz{
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+    margin-top: 100%;
+}
+.laptop{
+    font-size: 2.9rem !important;
+    color: gray;
+
+}
+.projects{
+    font-size: 2.9rem !important;
+    color: gray;
+
+}
+.person{
+    font-size: 2.9rem !important;
+    color: gray;
+}
+.public{
+    font-size: 2.9rem !important;
+    color: gray;
 }
 .nav_container{
     width: 100%;
@@ -61,4 +123,36 @@ a .active_Link{
     background-color: transparent;
     color: orange;
     border: 1px solid orange;
+}
+.sidebar{
+    display: none;
+}
+@media screen and (max-width: 641px) {
+    .logo{
+        font-size: 1rem;
+        letter-spacing: 1.5px;
+    }
+    .nav_container{
+        padding: 0px 0.8rem;
+    }
+    .items{
+        display: none;
+    }
+    .sidebar{
+        display: block;
+        position: absolute;
+        top: 36%;
+        right: 5%;
+        cursor: pointer;
+    }
+    .swipe{
+        color: orangered;
+        font-size: 1.5rem !important;
+    }
+    .sidebar_close{
+        width: 100%;
+        position: absolute;
+        height: 100vh;
+        background-color: white;
+    }
 }

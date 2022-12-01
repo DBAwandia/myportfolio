@@ -13,3 +13,8 @@
     background-color: black;
     color: white;
 }
+@media screen and (max-width: 641px) {
+    .homes{
+        width: 100%;
+    }
+}

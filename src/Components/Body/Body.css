@@ -5,7 +5,7 @@
     margin-top: 2rem;
 }
 .body_container{
-    flex: 1;
+    width: 100%;
     display: grid;
     align-items: center;
     place-items: center;
@@ -63,7 +63,7 @@ a{
 }
 .right_body_container{
     flex: 0.5;
-    overflow: hidden;
+    /* overflow: hidden; */
 
     /* position: relative; */
 }
@@ -120,4 +120,75 @@ a{
     font-size: 4rem !important;
     margin-left: 8rem !important;
     color: whitesmoke;
+}
+@media screen and (max-width: 641px) {
+    .body{
+        width: 100%;
+        margin-top: 0rem;
+    }
+    .body_container{
+        padding: 1.5rem 0.7rem;
+        display: flex;
+        flex-direction: column;
+        /* align-items: center; */
+        gap: 0.8rem;
+    }
+    .left_body_container{
+        flex: 1;
+        align-items: center;
+    }
+    .left_items{
+        gap: 1rem;
+    }
+    .left_items > h1{
+        font-size: 1.8rem;
+    }
+    .left_items > h2{
+        font-size: 1.5rem;
+        color: orange;
+    }
+    .left_items > h3{
+        font-size: 1.1rem;
+    }
+    .left_items > p{
+        width: 100%;
+        line-height: 28px;
+        font-size: 0.9rem;
+    }
+    .hire_me_button{
+        width: 100%;
+        height: 2.4rem;
+        font-size: 1rem;
+        border: 0;
+        outline: 0;
+        background-color: orangered;
+        color: white;
+        cursor: pointer;
+        box-shadow: -1px 33px 52px -7px rgba(232,224,28,0.19);
+    -webkit-box-shadow: -1px 33px 52px -7px rgba(232,224,28,0.19);
+    -moz-box-shadow: -1px 33px 52px -7px rgba(232,224,28,0.19);
+    }
+    .right_body_container{
+        flex: 1;
+    }
+    .right_items{
+        gap: 0.5rem;
+    }
+    .image_blob2{
+        display: none;
+    }
+    .image_blob3{
+        margin-top: 1rem;
+      
+    }
+    .image_blob3 > img{
+        border-radius: 0;
+        object-fit: cover;
+        width: 16rem !important;
+        height: 16rem !important;
+       
+    }
+    .icons_profile{
+        display: none;
+    }
 }

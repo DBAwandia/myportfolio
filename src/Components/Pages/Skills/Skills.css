@@ -68,3 +68,65 @@
     color: gray;
     font-weight: 490;
 }
+@media screen and (max-width: 641px) {
+    .skills_container{
+        gap: 1rem;
+    }
+    .skills_header{
+        display: flex;
+        align-items: center;
+        gap: 0.8rem;
+    }
+    .skills_header > h1{
+        font-size: 1.5rem;
+        color: darkgray;
+    }
+    .skills_header > span{
+        font-size: 1.3rem;
+        color: orangered;
+    }
+    .skills_desc > p{
+        font-size: 0.94rem;
+        color: darkgray;
+        padding: 0.5rem 1rem;
+        line-height: 24px;
+    
+    }
+    .skills_languages{
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        padding: 0rem 0px;
+    }
+    .skillz_container{
+        width: 100%;
+        padding: 2rem;
+        background-color: white;
+        border-radius: 5px;
+        border: 1px solid rgba(128, 128, 128,0.1);
+    }
+    .item_container{
+        display: flex;
+        flex-direction: column;
+        gap: 1.3rem;
+    }
+    .item_image > img{
+        width: 5.5rem;
+        height: 5.5rem;
+        object-fit: cover;
+        border-radius: 0.8rem;
+    }
+    .item_title > h1{
+        font-size: 1.3rem;
+        font-weight: bolder;
+        color: darkgray;
+    
+    }
+    .item_desc > p{
+        font-size: 1rem;
+        line-height: 29px;
+        color: gray;
+        font-weight: 490;
+    }
+}
