@@ -5,7 +5,7 @@
     margin-bottom: 1.5rem;
     margin-top: 5rem;
     color: darkgray;
-
+    overflow: hidden;
 }
 .personal_education{
     flex: 1;
@@ -107,7 +107,7 @@
     }
     .education_desc > span{
         width: 100%;
-        padding: 0.78rem 0rem;
+        padding: 0.7rem 0rem;
         text-align: center;
         border-radius: 4px;
         cursor: crosshair;
