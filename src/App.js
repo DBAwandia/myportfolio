@@ -1,6 +1,5 @@
 import {BrowserRouter as Router,Route,Routes} from "react-router-dom"
 import Home from "./Components/Pages/Home";
-import Personal from "./Components/Pages/Personal/Personal";
 
 function App() {
   return (

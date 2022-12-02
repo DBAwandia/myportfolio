@@ -1,0 +1,101 @@
+.Sidebar{
+    width: 100%;
+    height: 100vh;
+}
+.position_sidebars{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    /* background-color: red; */
+}
+.sidebar_close{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 99;
+    height: 100vh;
+    background-color: rgba(0, 0, 0,0.945);
+}
+.sidebar_icons{
+    width: 28%;
+    background-color: white;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    padding: 2rem 5rem;
+    flex-direction: column;
+    gap: 3rem;
+    z-index: 9999;
+}
+.icon_skillz{
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+}
+.icon_skillzz{
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+    margin-top: 100%;
+}
+.laptop{
+    font-size: 2.9rem !important;
+    color: gray;
+
+}
+.projects{
+    font-size: 2.9rem !important;
+    color: gray;
+
+}
+.person{
+    font-size: 2.9rem !important;
+    color: gray;
+}
+.public{
+    font-size: 2.9rem !important;
+    color: gray;
+}
+@media screen and (max-width: 642px) {
+    .sidebar_icons{
+        width: 70%;
+        padding: 2rem 1rem;
+        gap: 1.3rem;
+    }
+    .icon_skillz{
+       
+        gap: 3rem;
+    }
+    .icon_skillzz{
+        gap: 3rem;
+    }
+    .laptop{
+        font-size: 1.8rem !important;
+        color: gray;
+    
+    }
+    .projects{
+        font-size: 1.8rem !important;
+        color: gray;
+    
+    }
+    .person{
+        font-size: 1.8rem !important;
+        color: gray;
+    }
+    .public{
+        font-size: 1.8rem !important;
+        color: gray;
+    }
+    .icon_skillz > p{
+        font-size: 1rem;
+    }
+    .icon_skillzz > p{
+        font-size: 1rem;
+    }
+}

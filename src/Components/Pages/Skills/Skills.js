@@ -36,14 +36,8 @@ function Skills() {
 ]
 
   return (
-    
-
     <div className='skills' id='skills'>
-       
-
        <div className='skills_container'>
-       
-       
        <div className='skills_header'>
           <h1>My</h1><span>Skills</span>
         </div>
