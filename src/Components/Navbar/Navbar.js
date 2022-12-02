@@ -8,9 +8,7 @@ function Navbar({setOpen}) {
   
   return (
     <div className='navbar'>
-      <div className='sidebar' onClick={()=>{
-        setOpen(true)
-      }}>
+      <div className='sidebar' >
           <FormatAlignLeft className="swipe"/>
       </div>
       <div className='nav_container'>
