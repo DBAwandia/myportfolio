@@ -2,11 +2,9 @@ import React, { useState } from 'react'
 import "./Navbar.css"
 import { HashLink as Link } from 'react-router-hash-link';
 import {  FormatAlignLeft } from '@mui/icons-material';
-import Sidebar from "../Pages/Sidebar/Sidebar"
 
-function Navbar() {
+function Navbar({setOpen}) {
   const [active , setActive ] = useState("")
-  const [open ,setOpen] = useState(false)
   
   return (
     <div className='navbar'>
@@ -15,9 +13,6 @@ function Navbar() {
       }}>
           <FormatAlignLeft className="swipe"/>
       </div>
-      {open && <div className='open_sidebar'>
-        <Sidebar setOpen={setOpen}/>
-      </div>}
       <div className='nav_container'>
         <div className='logo'>
           Home
