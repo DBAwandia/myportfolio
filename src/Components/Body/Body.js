@@ -11,9 +11,9 @@ function Body() {
   return (
     <div className={open?"bodys":"body"} id='tops' >
         <Navbar setOpen={setOpen} />
-        {open&&<div className='open_sidebar'>
+        {/* {open&&<div className='open_sidebar'>
             <Sidebar setOpen={setOpen}/>
-        </div>}
+        </div>} */}
         <div className='body_container'>
             <div className='left_body_container'>
                 <div className='left_items'>

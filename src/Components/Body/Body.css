@@ -6,7 +6,7 @@
     margin-top: 2rem;
 }
 .bodys{
-    overflow: hidden;
+    overflow: auto;
 }
 .open_sidebar{
     width: 100%;
