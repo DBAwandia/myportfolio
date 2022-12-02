@@ -95,3 +95,42 @@ a{
     font-size: 4rem !important;
     color: #df1f00;
 }
+@media screen and (max-width: 641px) {
+    .my_socials{
+        display: none;
+    }
+    .top{
+        right: 1rem;
+        bottom: 2.2rem;
+    }
+    .expand{
+        font-size: 2.5rem !important;
+        color: white;
+    }
+    .contact_image > img{
+        height: 100%;
+        object-fit: cover;
+    }
+    .contact_icons{
+        width: 100%;
+    }
+    .socialz{
+        gap: 0.7rem;
+    }
+    .socialz > p{
+        color: #808080b3;
+        font-size: 0.9rem;
+    }
+    .twitterz{
+        font-size: 1.9rem !important;
+    }
+    .telegram{
+        font-size: 1.9rem !important;
+    }
+    .whatsapp{
+        font-size: 1.9rem !important;
+    }
+    .email{
+        font-size: 1.9rem !important;
+    }
+}

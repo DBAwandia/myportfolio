@@ -15,7 +15,7 @@ function About() {
             <h1>About</h1>
             <span>.me</span>
           </div>
-          <div className='my_statement'>
+        <div className='my_statement'>
             <h2>Hi , am Wandia</h2>
             <p>
             Hi, Everyone I am a Computer Science student currently I am studying at University of Eldoret.
@@ -25,13 +25,14 @@ function About() {
             I love coding and specially web development.
             </p>
             <div className='social'>
-            <a href='https://twitter.com/keniko1297'>
-              <Twitter className="twitter" />
-             </a>
-             <a href='https://github.com/DBAwandia'>
-              <GitHub className="github" />
-             </a>
-            </div>
+              <a href='https://twitter.com/keniko1297'>
+                <Twitter className="twitter" />
+              </a>
+              <a href='https://github.com/DBAwandia'>
+                <GitHub className="github" />
+                
+              </a>
+           </div>
           </div>
         </div>
       </div>

@@ -5,6 +5,8 @@
     place-items: center;
     align-items: center;
     position: relative;
+    background-color: black;
+
 }
 .position_sidebars{
     width: 100%;

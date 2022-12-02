@@ -27,9 +27,9 @@
 }
 .projects_container{
     width: 100%;
-    display: grid;
+    /* display: grid;
     place-items: center;
-    align-items: center; 
+    align-items: center;  */
     gap: 4rem;
     display: flex;
     flex-direction: column;
@@ -81,7 +81,7 @@
 }
 .project_description >  a > button{
     width: 85%;
-    height: 6rem;
+    height: 5.4rem;
     border: 0;
     outline: 0;
     cursor: pointer;
@@ -98,4 +98,62 @@
 }
 a{
     text-decoration: none;
+}
+@media screen and (max-width: 641px) {
+    .projects{
+        display: flex;
+        gap: 0.5rem;
+        flex-direction: column;
+    }
+    .projects_container{
+        padding: 0.7rem 1rem;
+        gap: 1rem;
+        display: flex;
+        flex-direction: column;
+    }
+    .projects_container > p{
+        font-size: 0.9rem;
+        color: gray;
+    }
+    .show_image{
+        display: none;
+    }
+    .project_showcase{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 1rem ;
+        gap: 2rem;
+    }
+    .project_description{
+        width: 100%;
+        gap: 2rem;
+    }
+    .project_description > h1{
+        font-size: 1.1rem;
+        width: 100%;
+    }
+    .project_description > p{
+        width: 100%;
+        font-size: 0.94rem;
+        line-height: 29px;
+        color: gray;
+    }
+    .project_header{
+        font-size: 1.2rem;
+        margin-top: 1rem;
+    }
+    .banking_project{
+        flex: 1;
+    }
+    .banking_project > img{
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+    .project_description >  a > button{
+        width: 100%;
+        height: 2.9rem;
+        font-size: 1rem;
+    }
 }

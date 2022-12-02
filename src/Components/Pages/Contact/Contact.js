@@ -7,7 +7,7 @@ function Contact() {
   return (
     <div className='contact' id='mysocials'>
         <div className='top'>
-            <Link to="#top">
+            <Link to="#tops">
             <ExpandLess className='expand'/>
             </Link>
         </div>

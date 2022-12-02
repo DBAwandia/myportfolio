@@ -2,7 +2,6 @@
     width: 100%;
     height: 100vh;
     overflow: scroll;
-    background-color: rgba(255, 192, 203,0.12);
     display: grid;
     place-items: center;
     align-items: center;
@@ -10,7 +9,7 @@
 .container{
     width: 100%;
     height: 100vh;
-    background-color: black;
+    background-color: rgba(255, 192, 203,0.12);
     color: white;
 }
 @media screen and (max-width: 641px) {

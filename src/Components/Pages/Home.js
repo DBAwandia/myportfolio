@@ -9,8 +9,8 @@ import Personal from './Personal/Personal'
 
 function Home() {
   return (
-    <div className='homes' >
-      <div className='container'id='top'>
+    <div className='homes'  >
+      <div className='container' id='top'>
         <Navbar />
         <Body />
         <Skills/>

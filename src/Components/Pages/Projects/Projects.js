@@ -16,7 +16,7 @@ function Projects() {
       <div className='projects_container'>
         <div className='project_header'>
           <h1 style={{color:"orangered"}}>My</h1>
-          <h1>Projects</h1>
+          <h1>Project</h1>
         </div>
         <p>All my projects in which I had worked and developed are shown below</p>
         <div className='project_showcase'>

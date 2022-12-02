@@ -5,22 +5,18 @@ import { HashLink as Link } from 'react-router-hash-link';
 
 function Body() {
   return (
-    <div className='body' >
+    <div className='body' id='tops' >
         <div className='body_container'>
             <div className='left_body_container'>
                 <div className='left_items'>
                     <h1>Hi, I Am</h1>
                     <h2>Kennedy Wandia</h2>
                     <h3 style={{color:"teal"}}>Full stack developer</h3>
-                    <p> Many desktop publishing packages
-                         and web page editors now use Lorem
-                          Ipsum as their default model text, 
-                          and a search for 'lorem ipsum' will 
-                          uncover many web sites still in their
-                           infancy. Various versions have evolved
-                            over the years, sometimes by accident,
-                             sometimes on purpose 
-                             (injected humour and the like).
+                    <p>  
+                            I am a passionate Full stack Web Developer .
+                            I am always ready to have new experiences and learn new technologies and implement them in real life.
+                            I learn new things and help people by creating impact through my developing skills and by solving their problem.
+                            I love coding and specially web development.
                     </p>
                     <Link to="#mysocials">
                         <button  className='hire_me_button'>Hire me</button>
