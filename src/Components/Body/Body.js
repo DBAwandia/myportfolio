@@ -8,6 +8,8 @@ import Navbar from '../Navbar/Navbar';
 function Body() {
   const [open ,setOpen] = useState(false)
   const image= "/images/whatsapp.jpeg"
+  const image1 ="https://st.depositphotos.com/1915171/5109/v/950/depositphotos_51091665-stock-illustration-coder-sign-icon-programmer-symbol.jpg"
+
   return (
     <div className={open?"bodys":"body"} id='tops' >
         <div className='navbar_body'>
@@ -19,6 +21,9 @@ function Body() {
         <div className='body_container'>
                 <div className='image_blob3'>
                     <img src={image} alt='' />
+                </div>
+                <div className='image_blob4'>
+                    <img src={image1} alt='' />
                 </div>
             <div className='left_body_container'>
                 <div className='left_items'>
