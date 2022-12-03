@@ -3,7 +3,49 @@
     height: 100vh;
     width: 100%;
     position: relative;
-    margin-top: 2rem;
+}
+.navbar_body{
+    margin-top: 3rem;
+    /* position: sticky;
+    z-index: 9999999999999;
+    top: 5px; */
+}
+.i-title{
+    overflow: hidden;
+    height: 4.2rem;
+    width: 100%;
+}
+.animate > h3{
+    font-size: 3.5rem;
+    overflow: hidden;
+    width: 100%;
+    color: gray;
+}
+.animate{
+    
+    animation-name: move;
+    animation-direction:alternate;
+    animation-timing-function: ease-in-out;
+    animation-duration: 10s;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+}
+@keyframes move {
+    25%{
+        transform: translateY(-64px);
+    }
+    50%{
+        transform: translateY(-90px);
+
+    }
+    75%{
+        transform: translateY(-159px);
+
+    }
+    100%{
+        transform: translateY(0px);
+
+    }
 }
 .bodys{
     overflow: auto;
@@ -27,34 +69,37 @@
 }
 .left_body_container{
     flex: 0.5;
+    width: 100%;
 }
 .right_body_container{
     flex: 0.5;
+    width: 100%;
+
 }
 .body_container{
     display: flex;
     align-items: center;
     gap: 1rem;
 }
-.left_items{
+.align_header{
     display: flex;
-    flex-direction: column;
     gap: 2rem;
 }
-.left_items > h1{
-    font-size: 4rem;
+.align_header > h1{
+    font-size: 2rem;
+    color: gray;
+
 }
-.left_items > h2{
-    font-size: 5.5rem;
-    color: orange;
+.align_header > h2{
+    font-size: 1.5rem;
+    color: gray;
 }
-.left_items > h3{
-    font-size: 3.5rem;
-}
+
 .left_items > p{
     width: 88%;
     line-height: 58px;
     font-size: 1.8rem;
+    color: gray;
 }
 a{
     text-decoration: none;
@@ -65,15 +110,18 @@ a{
     font-size: 2rem;
     border: 0;
     outline: 0;
-    background-color: orangered;
-    color: white;
+    background-color: transparent;
+    border: 1px solid rgba(255, 69, 0,0.25);
+    color: gray;
+    font-weight: bolder;
     cursor: pointer;
     box-shadow: -1px 33px 52px -7px rgba(232,224,28,0.19);
 -webkit-box-shadow: -1px 33px 52px -7px rgba(232,224,28,0.19);
 -moz-box-shadow: -1px 33px 52px -7px rgba(232,224,28,0.19);
 }
 .hire_me_button:hover{
-    background-color: orange;
+        background-color: transparent;
+        color: orange;
 }
 .right_body_container{
     flex: 0.5;
@@ -88,34 +136,14 @@ a{
     gap: 1rem;
     position: relative;
 }
-.image_blob2{
-    position: absolute;
-    right: 0.3rem;
-    top: 0.5rem;
-}
-.image_blob2:hover{
-    position: absolute;
-    right: 0.3rem;
-    transform: rotate(23deg);
-    top: 0.5rem;
-}
-.image_blob2 > img{
-    border-radius: 90%;
-    object-fit: cover;
-    width: 10rem;
-    height: 10rem;
-   
-}
 
-.image_blob3{
-    top: 0rem;
-  
-}
 .image_blob3 > img{
-    width: 50rem;
-    border-radius: 50%;
+    box-shadow: 1px 3px 25px -2px rgba(217,167,39,0.3);
+-webkit-box-shadow: 1px 3px 25px -2px rgba(217,167,39,0.3);
+-moz-box-shadow: 1px 3px 25px -2px rgba(217,167,39,0.3);
+    width: 30rem;
     object-fit: contain;
-    height: 55rem;
+    height: 35rem;
 }
 .icons_profile{
     position: sticky;
@@ -147,21 +175,64 @@ a{
         /* align-items: center; */
         gap: 0.8rem;
     }
+    .navbar_body{
+        margin-top: 1.6rem;
+    }
+    .i-title{
+        overflow: hidden;
+        height: 2.4rem;
+        width: 100%;
+    }
+    .animate > h3{
+        font-size: 1.6rem;
+        overflow: hidden;
+        width: 100%;
+    }
+    .animate{
+        display: flex;
+        flex-direction: column;
+        gap: 2.4rem;
+        animation-name: move;
+        animation-direction:alternate;
+        animation-timing-function:ease-in-out;
+        animation-play-state: running;
+        animation-duration: 12s;
+        animation-delay: 1.5s;
+        animation-iteration-count: infinite;
+    }
+    @keyframes move {
+        25%{
+            transform: translateY(-75px);
+        }
+        50%{
+            transform: translateY(-83px);
+    
+        }
+        75%{
+            transform: translateY(-154px);
+    
+        }
+        100%{
+            transform: translateY(0px);
+    
+        }
+    }
     .left_body_container{
-        flex: 1;
+        width: 100%;
         align-items: center;
     }
-    .left_items{
+    .align_header{
         gap: 1rem;
+        margin: 2rem 0.2rem;
+        align-items: center;
     }
-    .left_items > h1{
-        font-size: 1.8rem;
+    .align_header > h1{
+        font-size: 0.95rem;
     }
-    .left_items > h2{
-        font-size: 1.5rem;
-        color: orange;
+    .align_header > h2{
+        font-size: 0.85rem;
     }
-    .left_items > h3{
+    .align_header > h3{
         font-size: 1.1rem;
     }
     .left_items > p{
@@ -175,9 +246,11 @@ a{
         font-size: 1rem;
         border: 0;
         outline: 0;
-        background-color: orangered;
-        color: white;
+        color: gray;
+
+        font-weight: bolder;
         cursor: pointer;
+    border: 1px solid rgba(255, 69, 0,0.35);
         box-shadow: -1px 33px 52px -7px rgba(232,224,28,0.19);
     -webkit-box-shadow: -1px 33px 52px -7px rgba(232,224,28,0.19);
     -moz-box-shadow: -1px 33px 52px -7px rgba(232,224,28,0.19);
@@ -188,18 +261,17 @@ a{
     .right_items{
         gap: 0.5rem;
     }
-    .image_blob2{
-        display: none;
-    }
+    
     .image_blob3{
+        width: 100%;
         margin-top: 1rem;
       
     }
     .image_blob3 > img{
-        border-radius: 0;
+        border-radius: 2px;
         object-fit: cover;
-        width: 16rem !important;
-        height: 16rem !important;
+        width: 100% !important;
+        height: 100% !important;
        
     }
     .icons_profile{
