@@ -12,37 +12,31 @@
 .top{
     position: absolute;
     right: 2rem;
-    bottom: 4rem;
+    bottom: 2rem;
     cursor: pointer;
 }
 .expand{
     font-size: 4.5rem !important;
     color: white;
 }
-.my_socials{
-    position: absolute;
-    left: 0rem;
-    bottom: 18rem;
-    text-transform: capitalize;
-    letter-spacing: 2px;
+.contact_image{
+    width: 100%;
+    height: 100%;
     display: flex;
-    align-items: center;
-    font-weight: bolder;
-    gap: 1.5rem;
-    width: 20%;
-    transform: rotate(270.8deg);
+    gap: 2rem;
 }
-.my_socials > p{
-    font-size: 2.3rem;
+.banner{
+    width: 50%;
+    padding-top: 5rem;
+    opacity: 0.7;
 }
-.my_socials > span{
-    font-size: 2.3rem;
-    color: orangered;
+.banner_email{
+    width: 50%;
 }
 .contact_image > img{
     width: 100%;
-    height: 90%;
-    object-fit: cover;
+    height: 100%;
+    object-fit: contain;
 }
 .contact_icons{
     width: 90%;
@@ -96,9 +90,7 @@ a{
     color: #df1f00;
 }
 @media screen and (max-width: 641px) {
-    .my_socials{
-        display: none;
-    }
+    
     .top{
         right: 1rem;
         bottom: 2.2rem;
@@ -107,10 +99,21 @@ a{
         font-size: 2.5rem !important;
         color: orangered;
     }
-    .contact_image > img{
+    .contact_image{
+        width: 100%;
+        height: 100%;
+    }
+    .banner{
+        display: none;
         height: 100%;
         object-fit: cover;
     }
+   .banner_email{
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 099999;
+   }
     .contact_icons{
         width: 100%;
     }

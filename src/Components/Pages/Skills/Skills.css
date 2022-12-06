@@ -1,135 +1,51 @@
 .skills{
     width: 100%;
-    /* height: 100vh; */
-    position: relative;
-    margin-top: 2rem;
-    overflow: hidden;
-
+    height: 100vh;
+    background-color: red;
+    display: grid;
+    align-items: center;
+    place-items: center;
 }
 .skills_container{
-    display: grid;
-    place-items: center;
-    align-items: center;
-    width: 100%;
-    gap: 1.4rem;
+    height: 100%;
+    /* display: flex;
+    flex-direction: column;
+    gap: 2rem; */
 }
-.skills_header{
+.skills_header {
     display: flex;
     align-items: center;
-    gap: 1.3rem;
+    gap: 1rem;
+    font-size: 3rem;
 }
-.skills_header > h1{
-    font-size: 4rem;
-    color: darkgray;
-}
-.skills_header > span{
-    font-size: 4rem;
-    color: orangered;
-}
-.skills_desc > p{
+.skills_desc{
     font-size: 2rem;
-    color: darkgray;
-
 }
 .skills_languages{
     width: 100%;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 2rem;
-    padding: 2rem 14rem;
 }
 .skillz_container{
+    width: 80%;
+    margin-top: 2rem;
+}
+.skillz_back{
     width: 100%;
-    padding: 2rem 5rem;
-    background-color: white;
-    border-radius: 5px;
-    border: 1px solid rgba(128, 128, 128,0.1);
-}
-.skillz_container:hover{
-    background-color: rgba(0, 0, 0,0.15);
-}
-.item_container{
+    height: 70%;
     display: flex;
     flex-direction: column;
-    gap: 1.3rem;
+    gap: 2rem;
+    background-color: navy;
+    padding: 2rem 5rem;
+
 }
 .item_image > img{
     width: 10rem;
     height: 10rem;
-    object-fit: cover;
-    border-radius: 2rem;
+    object-fit: contain;
 }
 .item_title > h1{
-    font-size: 2.6rem;
-    font-weight: bolder;
-    color: darkgray;
-
+    font-size: 3rem;
 }
 .item_desc > p{
-    font-size: 1.8rem;
-    line-height: 45px;
-    color: gray;
-    font-weight: 490;
-}
-@media screen and (max-width: 641px) {
-    .skills_container{
-        gap: 1rem;
-    }
-    .skills_header{
-        display: flex;
-        align-items: center;
-        gap: 0.8rem;
-    }
-    .skills_header > h1{
-        font-size: 1.5rem;
-        color: darkgray;
-    }
-    .skills_header > span{
-        font-size: 1.4rem;
-        color: orangered;
-    }
-    .skills_desc > p{
-        font-size: 0.94rem;
-        color: darkgray;
-        padding: 0.5rem 1rem;
-        line-height: 24px;
-    
-    }
-    .skills_languages{
-        width: 100%;
-        display: grid;
-        grid-template-columns: 1fr;
-        gap: 1rem;
-        padding: 0rem 0px;
-    }
-    .skillz_container{
-        width: 100%;
-        padding: 2rem;
-        background-color: white;
-        border-radius: 5px;
-        border: 1px solid rgba(128, 128, 128,0.1);
-    }
-    .item_container{
-        display: flex;
-        flex-direction: column;
-        gap: 1.3rem;
-    }
-    .item_image > img{
-        width: 4rem;
-        height: 4rem;
-        object-fit: cover;
-        border-radius: 0.5rem;
-    }
-    .item_title > h1{
-        font-size: 1.3rem;
-        font-weight: bolder;
-        color: darkgray;
-    
-    }
-    .item_desc > p{
-        font-size: 1rem;
-        line-height: 29px;
-        color: gray;
-        font-weight: 490;
-    }
+    font-size: 2rem;
 }

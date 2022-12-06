@@ -1,7 +1,12 @@
 import React, { useEffect, useRef, useState } from 'react'
 import "./Skills.css"
 import 'animate.css';
+import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+import { Carousel } from 'react-responsive-carousel';
+
 function Skills() {
+
+  
   const skillsData = [
     {
       id: 1,
@@ -37,37 +42,40 @@ function Skills() {
 
   return (
     <div className='skills' id='skills'>
-       <div className='skills_container'>
-       <div className='skills_header'>
-          <h1>My</h1><span>Skills</span>
-        </div>
-                <div className="skills_desc">
-                  <p>Tools and programming languages that I use for development and making projects</p>
-                 </div>
+      <div className='skills_container'>
+            <div className='skills_header'>
+              <p>My</p><span>Skills</span>
+            </div>
+            <div className="skills_desc">
+              <p>Tools and programming languages that I use for development and making projects</p>
+            </div>
 
         <div className='skills_languages'>
-        {skillsData.map((item) =>{
-          return <div className='skillz_container' key={item.id}>
-              <div className='item_container'>
-                          <div className='item_image'>
-                            <img src={item.image} alt="" />
-                          </div>
-                          <div className='item_title'>
-                            <h1>{item.title}</h1>
-                          </div>
-                          <div className='item_desc'>
-                            <p>{item.description}</p>
-                          </div>
-                        </div>
-          </div>
-          })}
+
+          {skillsData.map((item) =>(
+
+           <div className='skillz_container' key={item.id}>
+
+                            <div className='skillz_back'>
+                              <div className='item_image'>
+                                <img src={item.image} alt="" />
+                              </div>
+                              <div className='item_title'>
+                                <h1>{item.title}</h1>
+                              </div>
+                              <div className='item_desc'>
+                                <p>{item.description}</p>
+                              </div>
+                            </div>
+                
+                  </div>
+
+          ))}
+
         </div>
 
       </div> 
-   
-    </div>
-    
-
+      </div>
   )
 }
 
