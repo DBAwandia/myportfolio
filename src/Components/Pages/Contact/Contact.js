@@ -2,6 +2,7 @@ import React from 'react'
 import  "./Contact.css"
 import {Email, ExpandLess, Telegram, Twitter, WhatsApp} from "@mui/icons-material"
 import { HashLink as Link } from 'react-router-hash-link';
+import Sendemail from './Sendemail';
 
 function Contact() {
   return (
@@ -11,12 +12,14 @@ function Contact() {
             <ExpandLess className='expand'/>
             </Link>
         </div>
-        <div className='my_socials'>
-            <p style={{color: "gray"}}>My</p>
-            <span>socials</span>
-        </div>
+        
         <div className='contact_image'>
-            <img src='/images/contact.png' alt='' />
+            <div className='banner'>
+                <img src='/images/contact.png' alt='' />
+            </div>
+            <div className='banner_email'>
+                <Sendemail/>
+            </div>
         </div>
         <div className='contact_icons'>
             <a href='https://t.me/xcrxwadda'>

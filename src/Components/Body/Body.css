@@ -277,6 +277,7 @@ a{
     }
     .image_blob3:hover + .image_blob4{
       display: block;
+      transition-duration: 3s;
        
     }
     .image_blob4{
