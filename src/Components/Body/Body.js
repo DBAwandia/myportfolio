@@ -4,6 +4,8 @@ import { Twitter,GitHub } from "@mui/icons-material"
 import { HashLink as Link } from 'react-router-hash-link';
 import Sidebar from '../Pages/Sidebar/Sidebar';
 import Navbar from '../Navbar/Navbar';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css';
 
 function Body() {
   const [open ,setOpen] = useState(false)
@@ -11,7 +13,7 @@ function Body() {
   const image1 ="https://st.depositphotos.com/1915171/5109/v/950/depositphotos_51091665-stock-illustration-coder-sign-icon-programmer-symbol.jpg"
 
   return (
-    <div className={open?"bodys":"body"} id='tops' >
+    <div className={open?"bodys":"body"} id='topz' >
         <div className='navbar_body'>
             <Navbar setOpen={setOpen} />
         </div>
@@ -20,22 +22,26 @@ function Body() {
         </div>} */}
         <div className='body_container'>
                 <div className='image_blob3'>
-                    <img src={image} alt='' />
-                </div>
-                <div className='image_blob4'>
-                    <img src={image1} alt='' />
+                    <LazyLoadImage
+                     src={image}
+                     effect="blur"
+                     delayTime="5000ms"
+                     className="image_blob4"
+                    //  width="30rem"
+                     />
+                    {/* <img src={image} alt='' loading='lazy' /> */}
                 </div>
             <div className='left_body_container'>
                 <div className='left_items'>
                    <div className='align_header'>
-                    <h1>Hi, I Am</h1>
+                    <h1>Hi, I am</h1>
                     <h2>Kennedy Wandia</h2>
                    </div>
                     <div className='i-title'>
                         <div className='animate'>
-                            <h3 style={{color:"orange"}}>Blogger</h3>
-                            <h3 style={{color:"orange"}}>Full stack developer</h3>
-                            <h3 style={{color:"orange"}}>UI/UX developer</h3>
+                            <h3 style={{color:"whitesmoke",opacity:0.84}}>Blogger</h3>
+                            <h3 style={{color:"whitesmoke",opacity:0.84}}>Full stack developer</h3>
+                            <h3 style={{color:"whitesmoke",opacity:0.84}}>UI/UX developer</h3>
                         </div>
                     </div>
                     <p>  

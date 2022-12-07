@@ -1,11 +1,10 @@
 .projects{
     width: 100%;
     height: 100vh;
-    background: rgba(0, 0, 0,0.84);
     position: relative;
-    color: darkgray;
-    overflow: hidden;
-
+    overflow: scroll;
+    background-color: rgb(10, 10, 10);
+    opacity: 0.99;
 }
 .show_image{
     position: absolute;
@@ -29,6 +28,7 @@
 }
 .projects_container{
     width: 100%;
+    height: 100%;
     /* display: grid;
     place-items: center;
     align-items: center;  */
@@ -91,14 +91,14 @@
     outline: 0;
     cursor: pointer;
     font-size: 2.5rem;
-    background-color: rgba(255, 69, 0,0.87);
-    color: white;
+    background-color: white;
+    color: gray;
     box-shadow: -1px 33px 52px -7px rgba(232,224,28,0.19);
     -webkit-box-shadow: -1px 33px 52px -7px rgba(232,224,28,0.19);
     -moz-box-shadow: -1px 33px 52px -7px rgba(232,224,28,0.19);
 }
 .project_description >a >  button:hover{
-    background-color: orange;
+    background-color: rgb(158, 158, 221);
     color: wheat;
 }
 a{
@@ -117,7 +117,7 @@ a{
         flex-direction: column;
     }
     .projects_container > p{
-        font-size: 0.9rem;
+        font-size: 0.95rem;
         color: gray;
     }
     .show_image{
@@ -135,34 +135,38 @@ a{
         gap: 2rem;
     }
     .project_description > h1{
-        font-size: 1rem !important;
+        font-size: 1.1rem !important;
         width: 100%;
+        color: lightgray;
 
     }
     .project_description > p{
         width: 100%;
-        font-size: 0.90rem;
+        font-size: 0.95rem;
         line-height: 26px;
         color: gray;
 
     }
     .project_header{
-        font-size: 1.2rem;
-        margin-top: 1rem;
+        font-size: 1.5rem;
+        margin: 1.2rem 0rem;
+        color: whitesmoke;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     }
     .banking_project{
         width: 100%;
     }
     .banking_project > img{
-        width: 100%;
-        height: 100%;
-        object-fit: contain;
+        width: 20rem;
+        height: 35rem;
+        object-fit:cover;
+        overflow: scroll;
 
     }
     .project_description >  a > button{
         width: 100%;
         height: 2.8rem;
-        font-size: 1rem;
+        font-size: 0.95rem;
 
     }
 }

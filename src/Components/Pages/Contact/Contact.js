@@ -8,16 +8,15 @@ function Contact() {
   return (
     <div className='contact' id='mysocials'>
         <div className='top'>
-            <Link to="#tops">
-            <ExpandLess className='expand'/>
+            <Link to="#topz">
+                <ExpandLess className='expand'/>
             </Link>
         </div>
-        
         <div className='contact_image'>
-            <div className='banner'>
+            <div className='bannerz'>
                 <img src='/images/contact.png' alt='' />
             </div>
-            <div className='banner_email'>
+            <div className='bannerz_email'>
                 <Sendemail/>
             </div>
         </div>

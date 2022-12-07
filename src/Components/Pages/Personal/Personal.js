@@ -2,7 +2,7 @@ import React from 'react'
 import "./Personal.css"
 function Personal() {
 
-let educations = "https://i.pinimg.com/originals/e8/f4/53/e8f453469a3ec97ecd354df465d73913.gif"
+let educations = "https://media.tenor.com/qJ5evVs-_uUAAAAC/coding.gif"
   return (
     <div className='personal' id='personal'>
       <div className='personal_education'>
@@ -14,7 +14,7 @@ let educations = "https://i.pinimg.com/originals/e8/f4/53/e8f453469a3ec97ecd354d
                 <b>My</b>
                 <span>background</span>
             </div>
-            <p>Hi, Everyone I am <b style={{color:"orange"}}>Computer science</b>  student, currently I am studying in University of Eldoret,Kenya .
+            <p>Hi, Everyone I am <b style={{color:"blue"}}>Computer science</b>  student, currently I am studying in University of Eldoret,Kenya .
                 I am a passionate Full stack Web Developer. 
                 I am always ready to have new experiences and learn new technologies and implement them in my life.
                 I learn new things and help people by creating impact through my developing skills and by solving their problem.

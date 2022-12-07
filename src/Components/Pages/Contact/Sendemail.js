@@ -68,7 +68,7 @@ function Sendemail() {
         <div className='send_emailcontainer'>
             <h1>Get in touch</h1>
             {showEmailError && <p>Email is required</p>}
-            {showSuccess && <p style={{color:"orangered"}}>Response sent successfully</p>}
+            {showSuccess && <p style={{color:"white"}}>Response sent successfully</p>}
             <input required type="email" className="email_input"  onChange={(e)=>setEmail(e.target.value)} placeholder="Your email address" />
             <div className='name_phone'>
             <PhoneInput

@@ -11,8 +11,8 @@ function Home() {
     <div className='homes'  >
       <div className='container' id='top'>
         <Body />
-        <Skills/>
-        <Projects />
+        {/* <Skills/> */}
+        {/* <Projects /> */}
         <Personal />
         <Contact />
       </div>

@@ -1,7 +1,9 @@
 .send_email{
     width: 100%;
     height: 100%;
-    padding: 10rem;
+    padding: 5rem;
+    overflow: scroll;
+    opacity: 0.8;
 }
 .send_emailcontainer{
     width: 100%;
@@ -16,7 +18,7 @@
 }
 .send_emailcontainer > h1{
     font-size: 4rem;
-    color: antiquewhite;
+    color: whitesmoke;
     text-transform: capitalize;
 }
 .email_input{
@@ -26,8 +28,8 @@
     padding-left: 2rem;
     border-radius: 10px;
     outline: none;
-    color: antiquewhite;
-    border: 1px solid antiquewhite;
+    color: whitesmoke;
+    border: 1px solid whitesmoke;
     background: transparent;
     outline-style: 2px solid yellow;
 }
@@ -44,8 +46,8 @@
     outline: none;
     padding-left: 2rem;
     border-radius: 10px;
-    color: antiquewhite;
-    border: 1px solid antiquewhite;
+    color: whitesmoke;
+    border: 1px solid whitesmoke;
     background: transparent;
     outline-style: 2px solid yellow;
 }
@@ -59,8 +61,8 @@
     outline: none;
     padding: 2rem;
     border-radius: 10px;
-    color: antiquewhite;
-    border: 1px solid antiquewhite;
+    color: whitesmoke;
+    border: 1px solid whitesmoke;
     background: transparent;
     outline-style: 2px solid yellow;
 }
@@ -77,8 +79,8 @@
     font-weight: 450;
     border-radius: 10px;
     outline: none;
-    color: antiquewhite;
-    border: 2px solid antiquewhite;
+    color: whitesmoke;
+    border: 2px solid whitesmoke;
     background: transparent;
     outline-style: 2px solid yellow;
 }
@@ -88,7 +90,7 @@
     height: 5rem;
     font-size: 2rem;
     outline: none;
-    background-color: antiquewhite;
+    background-color: whitesmoke;
     color: gray;
     border: 0;
     outline: 0;
@@ -101,24 +103,118 @@
     font-size: 2rem;
     outline: none;
     background-color: rgba(128, 128, 128,0.2);
-    color: antiquewhite;
+    color: whitesmoke;
     border: 0;
     outline: 0;
     cursor: not-allowed;
 }
 .send_mail_button:hover{
     background: rgba(0, 128, 128,0.19);
-    color: antiquewhite;
+    color: whitesmoke;
 }
 input[type=number]::-webkit-inner-spin-button, 
 input[type=number]::-webkit-outer-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
-
+textarea { resize: none; }
 :root{
     --PhoneInputCountryFlag-height: 4.3rem;
     --PhoneInputCountrySelect-marginRight: 1em;
 	--PhoneInputCountrySelectArrow-width: 1.5em;
     --PhoneInputCountrySelectArrow-color: white;
+}
+@media screen and (max-width: 641px) {
+    .send_email{
+        width: 100%;
+        height: 100vh;
+        padding: 6.5rem 0rem;
+
+    }
+    .send_emailcontainer{
+        width:100%;
+        padding: auto;
+        gap: 1.3rem;
+        align-self: center;
+
+    }
+    .send_emailcontainer > p{
+        font-size: 0.95rem;
+    }
+    .send_emailcontainer > h1{
+        font-size: 1.1rem !important;
+    }
+    .email_input{
+        height: 2.9rem;
+        width: 100%;
+        font-size: 0.9rem;
+        padding: 0.7rem 1rem !important;
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        border-radius: 2px;
+
+    }
+    .name_phone{
+        gap: 1rem;
+        display: flex;
+        flex-direction: column;
+    }
+    .phonenumber{
+        width: 100%;
+        height: 2.9rem;
+        font-size: 0.9rem;
+        padding-left: 1rem;
+        border-radius: 2px;
+        padding: 0.7rem 1rem !important;
+                border: 1px solid rgba(250, 235, 215,0.3);
+
+    }
+    .PhoneInput{
+        gap: 0.5rem;
+        width: 100%;
+    }
+    .PhoneInputInput{
+        width: 100%;
+        height: 2.9rem;
+        font-size: 0.9rem;
+        padding-left: 1rem;
+        border-radius: 2px;
+        padding: 0.7rem 1rem !important;
+        border: 1px solid rgba(250, 235, 215,0.3);
+
+    }
+    .text_area{
+        width: 100%;
+        height: 18vh;
+        overflow: hidden;
+    }
+    .text_area > textarea{
+        width: 100%;
+        height: 90%;
+        font-size: 0.9rem;
+        padding: 1rem 1rem;
+        border-radius: 2px;
+        border: 1px solid rgba(250, 235, 215,0.3);
+
+    }
+    .send_mail_button{
+        width: 100%;
+        height: 2.9rem;
+        font-size: 0.9rem;
+    }
+    .disable_mail_button{
+        width: 100%;
+        height: 2.9rem;
+        font-size: 0.9rem;
+    }
+    :root{
+        --PhoneInputCountryFlag-height: 1.25rem;
+        --PhoneInputCountrySelect-marginRight: 0.1em;
+        --PhoneInputCountrySelectArrow-width: 0.75em;
+        --PhoneInputCountrySelectArrow-color: white;
+    }
+}
+@media screen and (max-width: 241px) {
+    .send_email{
+        padding: 1.5rem 0rem;
+    }
 }
