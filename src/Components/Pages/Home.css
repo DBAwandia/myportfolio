@@ -5,11 +5,26 @@
     display: grid;
     place-items: center;
     align-items: center;
+    background:   linear-gradient(
+        rgba(0, 0, 0, 0.75), 
+        rgba(0, 0, 0, 0.75)
+      ), url("https://images.unsplash.com/photo-1478760329108-5c3ed9d495a0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8ZGFyayUyMGJsdWUlMjBiYWNrZ3JvdW5kfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" );
+    background-position: center;
+    filter: grayscale(20%);
+    background-size: cover;
+}
+.border_bottom{
+    width: 100%;
+    border-bottom: 3px solid rgba(0,255,225);
+    padding: 1rem 0rem;
+}
+.border_bottoms{
+    width: 100%;
+    border-bottom: 3px solid rgba(0,255,225);
 }
 .container{
     width: 100%;
     height: 100vh;
-    /* background-color: rgba(10, 10, 10, 0.9); */
     color: white;
 }
 @media screen and (max-width: 641px) {

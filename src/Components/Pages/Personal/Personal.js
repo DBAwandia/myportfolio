@@ -7,8 +7,8 @@ let educations = "https://media.tenor.com/qJ5evVs-_uUAAAAC/coding.gif"
     <div className='personal' id='personal'>
       <div className='personal_education'>
             <div className='education_header'>
-                My
-                background
+            My
+              background
             </div>
         <div className='education_gif'>
             <img src={educations} alt="" />

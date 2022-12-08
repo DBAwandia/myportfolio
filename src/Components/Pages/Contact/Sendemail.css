@@ -142,7 +142,7 @@ textarea { resize: none; }
         font-size: 0.95rem;
     }
     .send_emailcontainer > h1{
-        font-size: 1.1rem !important;
+        font-size: 1.2rem !important;
     }
     .email_input{
         height: 2.9rem;
@@ -151,7 +151,7 @@ textarea { resize: none; }
         padding: 0.7rem 1rem !important;
         border: none;
         border-radius: 2px;
-        background-color: rgba(211, 211, 211,0.1);
+        background-color: rgba(211, 211, 211,0.2);
 
 
     }
@@ -168,7 +168,7 @@ textarea { resize: none; }
         border-radius: 2px;
         padding: 0.7rem 1rem !important;
         border: none;
-        background-color: rgba(211, 211, 211,0.1);
+        background-color: rgba(211, 211, 211,0.2);
 
 
     }
@@ -182,7 +182,7 @@ textarea { resize: none; }
         font-size: 0.9rem;
         padding-left: 1rem;
         border-radius: 2px;
-        background-color: rgba(211, 211, 211,0.1);
+        background-color: rgba(211, 211, 211,0.2);
         padding: 0.7rem 1rem !important;
         border: none;
 
@@ -198,7 +198,7 @@ textarea { resize: none; }
         font-size: 0.9rem;
         padding: 1rem 1rem;
         border-radius: 2px;
-        background-color: rgba(211, 211, 211,0.1);
+        background-color: rgba(211, 211, 211,0.2);
         border: none;
 
     }

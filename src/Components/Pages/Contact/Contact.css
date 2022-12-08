@@ -4,7 +4,6 @@
     /* padding: 0px 14rem; */
     display: grid;
     overflow: scroll;
-    background-color: rgba(10, 10, 10, 0.9);
     place-items: center;
     align-items: center;
     position: relative;

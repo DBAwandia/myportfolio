@@ -10,11 +10,19 @@ function Home() {
   return (
     <div className='homes'  >
       <div className='container' id='top'>
-        <Body />
+        <div className='border_bottom'>
+          <Body />
+        </div>
+        <div className='border_bottom'>
+          <Projects />
+        </div>
+        <div className='border_bottom'>
+          <Personal />
+        </div>
+        <div className='border_bottoms'>
+          <Contact />
+        </div>
         {/* <Skills/> */}
-        <Projects />
-        <Personal />
-        <Contact />
       </div>
     </div>
   )
