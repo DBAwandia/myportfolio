@@ -2,6 +2,7 @@
     /* height: 100vh; */
     width: 100%;
     position: relative;
+    background-color: black;
 }
 .navbar_body{
     margin-top: 3rem;
