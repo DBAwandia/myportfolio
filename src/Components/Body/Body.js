@@ -23,7 +23,7 @@ function Body() {
         <div className='body_container'>
                 <div className='image_blob3'>
                     <LazyLoadImage
-                     src={image}
+                     src={image1}
                      effect="blur"
                      delayTime="5000ms"
                      className="image_blob4"
