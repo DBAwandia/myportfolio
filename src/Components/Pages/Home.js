@@ -12,7 +12,7 @@ function Home() {
       <div className='container' id='top'>
         <Body />
         {/* <Skills/> */}
-        {/* <Projects /> */}
+        <Projects />
         <Personal />
         <Contact />
       </div>

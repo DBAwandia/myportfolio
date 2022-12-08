@@ -1,172 +1,120 @@
 .projects{
     width: 100%;
     height: 100vh;
-    position: relative;
-    overflow: scroll;
-    background-color: rgb(10, 10, 10);
-    opacity: 0.99;
+    /* background-color: blue; */
 }
-.show_image{
-    position: absolute;
-    width: 100%;
-    height: 100vh;
-    z-index: 999999999;
-    
-}
-.images_showcase{
-    width: 100%;
-    height: 100vh;
-    display: grid;
-    place-items: center;
-    align-items: center; 
-    background: rgba(0, 0, 0,0.965);
-}
-.image_showcase > img{
-    width: 100%;
-    overflow: hidden;
-    height: 90vh;
-}
-.projects_container{
+.project_container{
     width: 100%;
     height: 100%;
-    /* display: grid;
+    display: grid;
     place-items: center;
-    align-items: center;  */
-    gap: 4rem;
+    align-items: center;
+}
+.display_flexi{
     display: flex;
-    flex-direction: column;
-    padding: 0rem 14rem;
+    width: 100%;
+    gap: 4rem;
+    padding: 3rem;
+    
+
+}
+.image{
+    width: 50%;
+    box-shadow: 4px 1px 48px -5px rgba(9,34,176,0.78);
+    -webkit-box-shadow: 4px 1px 48px -5px rgba(9,34,176,0.78);
+    -moz-box-shadow: 4px 1px 48px -5px rgba(9,34,176,0.78);
+}
+.image > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 .project_header{
+    width: 50%;
     display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    font-size: 2.5rem;
-    margin-top: 4rem;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;        
-
-}
-.project_showcase{
-    display: flex;
-    width: 100%;
-    margin-top: 2rem ;
-    gap: 1rem;
-}
-.projects_container > p{
-    font-size: 2.2rem;
-    color: gray;
-}
-.banking_project{
-    flex: 0.6;
-}
-.banking_project > img{
-    width: 100%;
-    height: 50rem;
-    object-fit: contain;
-}
-.project_description{
-    flex: 0.4rem;
-    display: flex;
-    width: 100%;
-    gap: 6rem;
-    overflow: hidden;
     flex-direction: column;
+    gap: 10rem;
 }
-.project_description > h1{
-    font-size: 2.8rem;
-    width: 100%;
-
+.bank_desc{
+    display: flex;
+    flex-direction: column;
+    gap: 10rem;
+    margin-top: 10rem;
 }
-.project_description > p{
-    width: 85%;
-    font-size: 2rem;
-    line-height: 55px;
+.project_container > h1{
+    font-size: 4.5rem;
+    color: blue;
+}
+.bank_desc > p{
+    font-size: 2.3rem;
     color: gray;
-
+    line-height: 55px;
 }
-.project_description >  a > button{
-    width: 85%;
-    height: 5.4rem;
+.bank_desc > button{
+    width: 100%;
+    height: 5.5rem;
+    margin-top: 5rem;
+    font-size: 2rem;
     border: 0;
     outline: 0;
     cursor: pointer;
-    font-size: 2.5rem;
-    background-color: white;
-    color: gray;
-    box-shadow: -1px 33px 52px -7px rgba(232,224,28,0.19);
-    -webkit-box-shadow: -1px 33px 52px -7px rgba(232,224,28,0.19);
-    -moz-box-shadow: -1px 33px 52px -7px rgba(232,224,28,0.19);
+    background-color: blue;
+    color: white;
+    opacity: 0.8;
 }
-.project_description >a >  button:hover{
-    background-color: rgb(158, 158, 221);
-    color: wheat;
+.bank_desc > button:hover{
+    background-color: purple;
 }
-a{
-    text-decoration: none;
-}
-@media screen and (max-width: 641px) {
-    .projects{
-        display: flex;
-        gap: 0.5rem;
-        flex-direction: column;
-    }
-    .projects_container{
-        padding: 0.3rem 1rem;
-        gap: 0.5rem;
-        display: flex;
-        flex-direction: column;
-    }
-    .projects_container > p{
-        font-size: 0.95rem;
-        color: gray;
-    }
-    .show_image{
-        display: none;
-    }
-    .project_showcase{
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        margin-top: 1rem ;
-        gap: 0.5rem;
-    }
-    .project_description{
-        width: 100%;
-        gap: 2rem;
-    }
-    .project_description > h1{
-        font-size: 1.1rem !important;
-        width: 100%;
-        color: lightgray;
 
+@media screen and (max-width: 642px) {
+    .project_container > h1{
+        font-size: 1.5rem;
+        opacity: 0.8;
     }
-    .project_description > p{
+    .display_flexi{
+        gap: 0;
+        padding: 0.8rem;
+        display: flex;
+        gap: 0;
+        flex-direction: column;
+    }
+    .image{
         width: 100%;
-        font-size: 0.95rem;
-        line-height: 26px;
-        color: gray;
-
+        height: 40%;
     }
     .project_header{
-        font-size: 1.5rem;
-        margin: 1.2rem 0rem;
-        color: whitesmoke;
-        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    }
-    .banking_project{
         width: 100%;
+        gap: 0rem;
     }
-    .banking_project > img{
-        width: 20rem;
-        height: 35rem;
-        object-fit:cover;
-        overflow: scroll;
-
+    .bank_desc{
+        gap: 0rem;
+        margin-top: 3rem;
     }
-    .project_description >  a > button{
-        width: 100%;
-        height: 2.8rem;
+    .bank_desc > p{
         font-size: 0.95rem;
-
+        color: gray;
+        line-height: 28px;
+    }
+    .bank_desc > button{
+        width: 100%;
+        height: 2.4rem;
+        margin-top: 5rem;
+        font-size: 0.95rem;
+        border: 0;
+        outline: 0;
+        cursor: pointer;
+        background-color: blue;
+        color: white;
+        opacity: 0.8;
+    }
+}
+@media screen and (max-width: 241px) {
+    .projects{
+        overflow: scroll;
+        height: fit-content;
+    }
+    .display_flexi{
+        
+        margin-top: 5rem;
     }
 }

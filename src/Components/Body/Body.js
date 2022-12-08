@@ -9,7 +9,7 @@ import 'react-lazy-load-image-component/src/effects/blur.css';
 
 function Body() {
   const [open ,setOpen] = useState(false)
-  const image= "/images/whatsapp.jpeg"
+  const image= "/images/whatsapp/jpeg"
   const image1 ="https://st.depositphotos.com/1915171/5109/v/950/depositphotos_51091665-stock-illustration-coder-sign-icon-programmer-symbol.jpg"
 
   return (
