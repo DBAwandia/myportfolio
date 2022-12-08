@@ -51,7 +51,7 @@ function Body() {
                             I love coding and specially web development.
                     </p>
                     <Link to="#mysocials">
-                        <button  className='hire_me_button'>Hire me</button>
+                        <button  className='hire_me_button'>Contact</button>
                     </Link>
                 </div>
             </div>
