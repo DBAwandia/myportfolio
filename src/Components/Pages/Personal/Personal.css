@@ -1,38 +1,42 @@
 .personal{
     width: 100%;
     height: 100vh;
-    padding: 0rem 14rem;
+    padding: 0rem 2rem;
     margin-bottom: 1.5rem;
     margin-top: 5rem;
-    color: darkgray;
-    overflow: hidden;
+    background-color: black;
+    overflow: scroll;
+
 }
 .personal_education{
-    flex: 1;
-    display: flex;
-    gap: 0.5rem;
+    width: 100%;
     height: 100%;
-    padding: 5rem 3rem;
+    display: grid;
+    place-items: center;
+    align-items: center;
 }
 .education_gif{
-    flex: 0.5;
+    width: 100%;
+    overflow: hidden;
+
 }
 .education_gif > img{
-    width: 55rem;
-    height: 35rem;
+    width: 100%;
+    box-shadow: 4px 1px 48px -5px rgba(9,34,176,0.78);
+    -webkit-box-shadow: 4px 1px 48px -5px rgba(9,34,176,0.78);
+    -moz-box-shadow: 4px 1px 48px -5px rgba(9,34,176,0.78);
+    height: 40rem;
     object-fit: cover;
+    overflow: hidden;
     border-radius: 8px;
 }
 .education_desc{
-    flex: 0.5;
+    width: 100%;
     display: flex;
     flex-direction: column;
-    gap: 3rem;
+    gap: 2rem;
 }
 .education_header{
-    display: flex;
-    align-items: center;
-    gap: 1rem;
     font-size: 3.5rem;
 }
 .education_header > span{
@@ -71,10 +75,11 @@
     .personal_education{
         width: 100%;
         display: flex;
-        gap: 1rem;
+        gap: 2rem;
         height: 100%;
         flex-direction: column;
         padding: 0rem 0.7rem;
+
     }
     .education_gif{
         width: 100%;
@@ -92,11 +97,7 @@
         gap: 1rem;
     }
     .education_header{
-        display: flex;
         width: 100%;
-        align-items: center;
-        gap: 1rem;
-        display: none;
         font-size: 1.2rem;
     }
     .education_desc > p{
