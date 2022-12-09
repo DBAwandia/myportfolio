@@ -123,6 +123,8 @@ textarea { resize: none; }
     --PhoneInputCountrySelect-marginRight: 1em;
 	--PhoneInputCountrySelectArrow-width: 1.5em;
     --PhoneInputCountrySelectArrow-color: white;
+    --toastify-color-transparent: rgb(255, 255, 255);
+    --toastify-z-index: 99999999;
 }
 @media screen and (max-width: 641px) {
     .send_email{
@@ -217,6 +219,7 @@ textarea { resize: none; }
         --PhoneInputCountrySelect-marginRight: 0.1em;
         --PhoneInputCountrySelectArrow-width: 0.55em;
         --PhoneInputCountrySelectArrow-color: white;
+
     }
 }
 @media screen and (max-width: 241px) {

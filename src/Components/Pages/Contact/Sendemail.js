@@ -4,6 +4,9 @@ import PhoneInput from 'react-phone-number-input'
 import "./Sendemail.css"
 import axios from "axios"
 import { axiosInstance } from '../../Baseurl/Config'
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 function Sendemail() {
   const [email, setEmail] = useState("")
   const [phonenumber, setPhonenumber] = useState("")
@@ -14,6 +17,8 @@ function Sendemail() {
   const [showEmailError,setShowEmailError] = useState(false)
   const [showUsernameError,setShowUsernameError] = useState(false)
   const [showSuccess,setShowSuccess] = useState(false)
+  const [loading,setLoading] = useState(false)
+
 
 
 
@@ -50,21 +55,32 @@ function Sendemail() {
       setEnable(false)
     }
   },[email,username,message,enable])
-
+  const customId = "custom-id-yes";
   const handleClick = async()=>{
+    setLoading(true)
     try{
-      await axiosInstance.post("/sendmail",{email: email, phonenumber: phonenumber, message: message, username: username})
-      setTimeout(()=>{
-        setShowSuccess(true)
-      }, 1500)
+      
+      await axiosInstance.post("/Send/sendmail",{email: email, phonenumber: phonenumber, message: message, username: username})
+      setShowSuccess(true)
+      toast.success("Successfully sent!",{
+        toastId: customId,
+        delay: 1000
+      })
+      setLoading(false)
     }catch(err){
-      setShowUsernameError(true)
-      setShowSuccess(false)
+      toast.warn("Please contact using Twiiter ,Whatsapp!",{
+        toastId: customId
+      })
+      setLoading(false)
+      setLoading(false)
     }
   }
-
   return (
     <div className='send_email'>
+      <ToastContainer 
+      autoClose={8000}
+      draggable
+       />
         <div className='send_emailcontainer'>
             <h1>Get in touch</h1>
             {showEmailError && <p>Email is required</p>}
@@ -75,7 +91,7 @@ function Sendemail() {
               defaultCountry={data}
               international
               initialValueFormat="national"
-              placeholder="Enter phonenumber"
+              placeholder="Enter phone number"
               value={phonenumber}
               onChange={setPhonenumber} 
               // className="phonenumber"
@@ -85,7 +101,7 @@ function Sendemail() {
             <div className='text_area'>
                 <textarea placeholder='Message' onChange={(e)=>setMessage(e.target.value)} required/>
             </div>
-            <button onClick={handleClick} disabled={enable} className={ enable? "disable_mail_button": "send_mail_button"}>Send</button>
+            <button onClick={handleClick} disabled={enable} className={ enable? "disable_mail_button": "send_mail_button"}>{loading? "Sending . . .": "Send"}</button>
         </div>
     </div>
   )
