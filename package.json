@@ -24,6 +24,8 @@
     "react-router-dom": "^6.4.3",
     "react-router-hash-link": "^2.4.3",
     "react-scripts": "5.0.1",
+    "react-slideshow-image": "^4.0.5",
+    "react-swipe": "^6.0.4",
     "react-toastify": "^9.1.1",
     "react-visibility-sensor": "^5.1.1",
     "swiper": "^8.4.5",

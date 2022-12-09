@@ -1,8 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react'
 import "./Skills.css"
-import 'animate.css';
-import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
-import { Carousel } from 'react-responsive-carousel';
 
 function Skills() {
 
@@ -41,21 +38,23 @@ function Skills() {
 ]
 
   return (
+    
     <div className='skills' id='skills'>
+           
       <div className='skills_container'>
             <div className='skills_header'>
-              <p>My</p><span>Skills</span>
+              <h1>
+                MySkills
+              </h1>
             </div>
             <div className="skills_desc">
               <p>Tools and programming languages that I use for development and making projects</p>
             </div>
-
+           
         <div className='skills_languages'>
 
           {skillsData.map((item) =>(
-
-           <div className='skillz_container' key={item.id}>
-
+            <div className='skillz_container' style={{background: "red"}}> 
                             <div className='skillz_back'>
                               <div className='item_image'>
                                 <img src={item.image} alt="" />
@@ -67,15 +66,14 @@ function Skills() {
                                 <p>{item.description}</p>
                               </div>
                             </div>
-                
-                  </div>
-
+                   </div> 
           ))}
 
         </div>
 
       </div> 
       </div>
+
   )
 }
 

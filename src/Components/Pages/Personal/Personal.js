@@ -2,7 +2,7 @@ import React from 'react'
 import "./Personal.css"
 function Personal() {
 
-let educations = "https://media.tenor.com/qJ5evVs-_uUAAAAC/coding.gif"
+let educations = "https://media2.giphy.com/media/PI3QGKFN6XZUCMMqJm/200.webp?cid=ecf05e47ju1sb58z8v3enuda7oq81nb2lo5vrai1t34nl5ug&rid=200.webp&ct=g"
   return (
     <div className='personal' id='personal'>
       <div className='personal_education'>
