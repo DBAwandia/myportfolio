@@ -8,7 +8,6 @@
     top: 0;
     right: 0;
     height: 100vh;
-    /* background-color: red; */
 }
 .sidebar_closez{
     width: 100%;
@@ -97,5 +96,34 @@
     }
     .icon_skillzz > p{
         font-size: 0.95rem !important;
+    }
+}
+@media screen and (max-width: 241px) {
+    .laptop{
+        font-size: 1.27rem !important;
+        color: gray;
+    
+    }
+    .projects{
+        font-size: 1.27rem !important;
+        color: gray;
+    
+    }
+    .person{
+        font-size: 1.27rem !important;
+        color: gray;
+    }
+    .public{
+        font-size: 1.27rem !important;
+        color: gray;
+    }
+    .icon_skillz > p{
+        font-size: 0.67rem !important;
+    }
+    .icon_skillzz > p{
+        font-size: 0.67rem !important;
+    }
+    .sidebar_icons{
+        gap: 1rem;
     }
 }
