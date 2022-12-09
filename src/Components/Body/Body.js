@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import "./Body.css"
-import { Twitter,GitHub } from "@mui/icons-material"
+import { Twitter,GitHub, FormatAlignLeft } from "@mui/icons-material"
 import { HashLink as Link } from 'react-router-hash-link';
 import Sidebar from '../Pages/Sidebar/Sidebar';
 import Navbar from '../Navbar/Navbar';
@@ -15,11 +15,16 @@ function Body() {
   return (
     <div className={open?"bodys":"body"} id='topz' >
         <div className='navbar_body'>
-            <Navbar setOpen={setOpen} />
+            <Navbar />
         </div>
-        {/* {open&&<div className='open_sidebar'>
+        {open && <div className='set_side_bar'>
             <Sidebar setOpen={setOpen}/>
-        </div>} */}
+        </div>}
+        <div className='sidebarz' onClick={()=>{
+            setOpen(true)
+        }} >
+          <FormatAlignLeft  className="swipez"/>
+        </div>
         <div className='body_container'>
                 <div className='image_blob3'>
                     <LazyLoadImage

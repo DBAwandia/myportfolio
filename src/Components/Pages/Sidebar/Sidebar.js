@@ -8,7 +8,7 @@ function Sidebar({setOpen}) {
 
   return (
     <div className='Sidebar'>
-      <div className='sidebar_close' onClick={()=>{
+      <div className='sidebar_closez' onClick={()=>{
           setOpen(false)
       }}>
       </div>
@@ -19,16 +19,18 @@ function Sidebar({setOpen}) {
               <p className={active === "Skills"? "active_Link": "normal_link"}
                 onClick={()=>{
                   setActive("Skills")
+                  setOpen(false)
                 }}
               >Skills</p>
             </div>
           </Link>
-          <Link to="#projects" smooth>
+          <Link to="#Projects" smooth>
             <div className='icon_skillz'>
               <AutoFixHighTwoTone className='projects'/>
             <p className={active ==="Projects"? "active_Link": "normal_link"}
               onClick={()=>{
                 setActive("Projects")
+                setOpen(false)
               }}
             >Projects</p>
             </div>
@@ -39,6 +41,7 @@ function Sidebar({setOpen}) {
             <p className={active === "personal"? "active_Link": "normal_link"}
                 onClick={()=>{
                   setActive("personal")
+                  setOpen(false)
                 }}
               >About me</p>
           </div>
@@ -49,6 +52,7 @@ function Sidebar({setOpen}) {
               <p className={active ==="About"? "active_Link": "normal_link"}
                 onClick={()=>{
                   setActive("About")
+                  setOpen(false)
                 }}
               >My socials</p>
             </div>

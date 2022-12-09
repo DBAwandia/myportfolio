@@ -8,9 +8,6 @@ function Navbar({setOpen}) {
   
   return (
     <div className='navbar'>
-      <div className='sidebar' >
-          <FormatAlignLeft className="swipe"/>
-      </div>
       <div className='nav_container'>
         <div className='logo'>
           Home

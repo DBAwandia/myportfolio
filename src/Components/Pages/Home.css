@@ -15,12 +15,12 @@
 }
 .border_bottom{
     width: 100%;
-    border-bottom: 3px solid rgba(0,255,225);
+    border-bottom: 3px solid white;
     padding: 1rem 0rem;
 }
 .border_bottoms{
     width: 100%;
-    border-bottom: 3px solid rgba(0,255,225);
+    border-bottom: 3px solid white;
 }
 .container{
     width: 100%;

@@ -3,6 +3,11 @@
     position: relative;
     overflow: scroll;
 }
+.sidebar{
+    display: none;
+    
+}
+
 .navbar_body{
     margin-top: 3rem;
     /* position: sticky;
@@ -164,6 +169,28 @@ a{
     .body{
         width: 100%;
         margin-top: 0rem;
+    }
+    .sidebarz{
+        display: block;
+        position: absolute;
+        top: 3% !important;
+        right: 5% !important; 
+        cursor: pointer;
+        z-index: 99999999999999;
+    }
+    .swipez{
+        color: white;
+        font-size: 1.5rem !important;
+    }
+    .set_side_bar{
+        width: 100%;
+        height: 100vh;
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        z-index: 9999999999999999;
     }
     .body_container{
         padding: 1.5rem 0.7rem;

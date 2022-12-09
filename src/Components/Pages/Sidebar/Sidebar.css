@@ -10,14 +10,14 @@
     height: 100vh;
     /* background-color: red; */
 }
-.sidebar_close{
+.sidebar_closez{
     width: 100%;
     position: absolute;
     top: 0;
     right: 0;
-    z-index: 99;
+    z-index: 9999;
     height: 100vh;
-    background-color: rgba(0, 0, 0,0.945);
+    background-color: rgba(0, 0, 0,0.94);
 }
 .sidebar_icons{
     width: 28%;
@@ -44,26 +44,26 @@
     margin-top: 100%;
 }
 .laptop{
-    font-size: 2.9rem !important;
+    font-size: 2.7rem !important;
     color: gray;
 
 }
 .projects{
-    font-size: 2.9rem !important;
+    font-size: 2.7rem !important;
     color: gray;
 
 }
 .person{
-    font-size: 2.9rem !important;
+    font-size: 2.7rem !important;
     color: gray;
 }
 .public{
-    font-size: 2.9rem !important;
+    font-size: 2.7rem !important;
     color: gray;
 }
 @media screen and (max-width: 642px) {
     .sidebar_icons{
-        width: 70%;
+        width: 65%;
         padding: 2rem 1rem;
         gap: 1.3rem;
     }
@@ -75,27 +75,27 @@
         gap: 3rem;
     }
     .laptop{
-        font-size: 1.8rem !important;
+        font-size: 1.53rem !important;
         color: gray;
     
     }
     .projects{
-        font-size: 1.8rem !important;
+        font-size: 1.53rem !important;
         color: gray;
     
     }
     .person{
-        font-size: 1.8rem !important;
+        font-size: 1.53rem !important;
         color: gray;
     }
     .public{
-        font-size: 1.8rem !important;
+        font-size: 1.53rem !important;
         color: gray;
     }
     .icon_skillz > p{
-        font-size: 1rem;
+        font-size: 0.95rem !important;
     }
     .icon_skillzz > p{
-        font-size: 1rem;
+        font-size: 0.95rem !important;
     }
 }

@@ -3,7 +3,7 @@
     height: 100%;
     padding: 5rem;
     overflow: scroll;
-    opacity: 0.8;
+    opacity: 0.99;
 }
 .send_emailcontainer{
     width: 100%;
@@ -18,7 +18,7 @@
 }
 .send_emailcontainer > h1{
     font-size: 4rem;
-    color: whitesmoke;
+    color: white;
     text-transform: capitalize;
 }
 .email_input{
