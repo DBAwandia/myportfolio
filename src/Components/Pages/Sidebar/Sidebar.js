@@ -47,7 +47,7 @@ function Sidebar({setOpen}) {
           </div>
           </Link>
           <Link to="#mysocials" smooth>
-            <div className='icon_skillzz'>
+            <div className='icon_skillz'>
               <Public className='public' />
               <p className={active ==="About"? "active_Link": "normal_link"}
                 onClick={()=>{
