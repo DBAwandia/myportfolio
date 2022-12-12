@@ -1,11 +1,11 @@
 import React from 'react'
 import "./Projects.css"
 function Projects() {
-
   const image ="https://assets-news.housing.com/news/wp-content/uploads/2022/06/22233859/IndusInd-Bank-FEATURE-compressed.jpg"
   return (
     <div className='projects' id='Projects'>
-      <div className='project_container'>
+      <div className="project_container">
+        
           <h1>Banking project</h1>
           <div className='display_flexi'>
               <div className='image'>

@@ -3,7 +3,7 @@
     height: 100vh;
     /* padding: 0px 14rem; */
     display: grid;
-    overflow: scroll;
+    /* overflow: scroll; */
     place-items: center;
     align-items: center;
     position: relative;

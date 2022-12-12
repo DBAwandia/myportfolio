@@ -5,6 +5,7 @@ import Skills from "./Components/Pages/Skills/Skills";
 import Testing from "./Components/Pages/Testing";
 
 function App() {
+  
   return (
       <div className="App">
     {/* // <BrowserRouter> */}

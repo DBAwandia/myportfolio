@@ -1,6 +1,11 @@
 import React, { useEffect, useRef, useState } from 'react'
 import "./Skills.css"
-
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Navigation, Pagination, Scrollbar, A11y } from 'swiper';
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import 'swiper/css/scrollbar';
 function Skills() {
 
   
@@ -38,41 +43,35 @@ function Skills() {
 ]
 
   return (
-    
+    <Swiper
+     modules={[Navigation, Pagination, Scrollbar, A11y]}
+     spaceBetween={50}
+     slidesPerView={1}
+     navigation
+     pagination={{ clickable: true }}
+     scrollbar={{ draggable: true }}
+     onSwiper={(swiper) => console.log(swiper)}
+     onSlideChange={() => console.log('slide change')}
+      className="swiperr"
+    >
     <div className='skills' id='skills'>
            
-      <div className='skills_container'>
-            <div className='skills_header'>
-              <h1>
-                MySkills
-              </h1>
-            </div>
-            <div className="skills_desc">
-              <p>Tools and programming languages that I use for development and making projects</p>
-            </div>
            
-        <div className='skills_languages'>
-
-          {skillsData.map((item) =>(
-            <div className='skillz_container' style={{background: "red"}}> 
-                            <div className='skillz_back'>
-                              <div className='item_image'>
-                                <img src={item.image} alt="" />
-                              </div>
-                              <div className='item_title'>
-                                <h1>{item.title}</h1>
-                              </div>
-                              <div className='item_desc'>
-                                <p>{item.description}</p>
-                              </div>
-                            </div>
-                   </div> 
-          ))}
-
-        </div>
-
-      </div> 
+      <SwiperSlide className='swiperx'>
+        <img src="/images/mongos.png" alt='' />
+        <h1>elcome</h1>
+        <h1>elcome</h1>
+        <h1>elcome</h1>
+        <h1>elcome</h1>
+        
+      </SwiperSlide>
+      <SwiperSlide className='swiperx'>Slide 1</SwiperSlide>
+      <SwiperSlide className='swiperx'>Slide 2</SwiperSlide>
+      <SwiperSlide className='swiperx'>Slide 3</SwiperSlide>
+      <SwiperSlide className='swiperx'>Slide 4</SwiperSlide>
       </div>
+      
+    </Swiper>
 
   )
 }

@@ -6,7 +6,11 @@ import Projects from './Projects/Projects'
 import Contact from './Contact/Contact'
 import Personal from './Personal/Personal'
 
+
 function Home() {
+  const value = window.scrollY
+  console.log(value)
+
   return (
     <div className='homes'  >
       <div className='container' id='top'>
@@ -17,6 +21,7 @@ function Home() {
           <Projects />
         </div>
         <div className='border_bottom'>
+
           <Personal />
         </div>
         <div className='border_bottoms'>

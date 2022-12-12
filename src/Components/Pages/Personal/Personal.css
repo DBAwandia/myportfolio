@@ -4,7 +4,7 @@
     padding: 2rem 2rem;
     margin-bottom: 1.5rem;
     margin-top: 5rem;
-    overflow: scroll;
+    /* overflow: scroll; */
     display: grid;
     place-items: center;
     align-items: center;
