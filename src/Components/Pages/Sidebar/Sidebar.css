@@ -127,3 +127,42 @@
         gap: 1rem;
     }
 }
+@media screen and (min-width: 643px) and (max-width: 1024px) 
+{
+    .sidebar_icons{
+        width: 65%;
+        padding: 2rem 1rem;
+        gap: 1.3rem;
+    }
+    .icon_skillz{
+       
+        gap: 3rem;
+    }
+    .icon_skillzz{
+        gap: 3rem;
+    }
+    .laptop{
+        font-size: 1.53rem !important;
+        color: gray;
+    
+    }
+    .projects{
+        font-size: 1.53rem !important;
+        color: gray;
+    
+    }
+    .person{
+        font-size: 1.53rem !important;
+        color: gray;
+    }
+    .public{
+        font-size: 1.53rem !important;
+        color: gray;
+    }
+    .icon_skillz > p{
+        font-size: 0.95rem !important;
+    }
+    .icon_skillzz > p{
+        font-size: 0.95rem !important;
+    }
+}
